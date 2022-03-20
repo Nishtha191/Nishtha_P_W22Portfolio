@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat App</title>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+
+
+  <div id="bodyContainer">
+    <br>
+    <h1 class="subtitle">Welcome to Chat Application</h1><br>
+    <div class="signup-container">
+      <h1 class="subtitle">Sign Up</h1>
+      <div id="uisu">
+
+      </div>
+      <div>
+          <label for="usernamesu">Username:</label><br>
+          <input class="inputt" type="text" id="usernamesu" placeholder="Username..."><br>
+          <label for="firstname">First Name:</label><br>
+          <input class="inputt" type="text" id="firstname" placeholder="First name..."><br>
+          <label for="lastname">Last Name:</label><br>
+          <input class="inputt" type="text" id="lastname" placeholder="Last name..."><br>
+          <label for="passwordsu">Password:</label><br>
+          <input class="inputt" type="password" id="passwordsu" placeholder="Password..."><br>
+      </div>
+      <div class='centre'>
+          <button class='btn' onclick="register()">Sign Up</button><br>
+          <br> Registred ? <button class='btn'><a href="index.html" type="button">Log In</a></button>
+      </div>
+    </div>
+
+  </div>
+  <div class="centre" id="chatbtn">
+
+  </div>
+  <div id="chatheader">
+
+  </div>
+  <div id="chatroom">
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts.js"></script>
+</body>
+<style>
+    body {
+        background: #ABCDEF;
+        font-family: Assistant, sans-serif;
+        display: flex;
+        min-height: 90vh;
+        justify-content: center;
+  }
+  .signup-container{
+    width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        padding: 80px;  
+        background: #404c58;  
+        border-radius: 15px ; 
+        color: aliceblue;
+  }
+  .subtitle{
+    font-family: Assistant, sans-serif;
+        display: flex;
+        justify-content: center;
+  }
+  .btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.inputt{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+</html>
