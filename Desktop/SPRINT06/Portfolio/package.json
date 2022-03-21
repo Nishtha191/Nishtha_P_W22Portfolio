@@ -1,7 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Nishtha191.github.io/nishtha_p_W22portfolio/Desktop/SPRINT06/Portfolio",
+  "private" : true,
+  "homepage": "https://Nishtha191.github.io/nishtha_p_W22portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
