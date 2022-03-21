@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  
   "private" : true,
   "homepage": "https://Nishtha191.github.io/nishtha_p_W22portfolio/",
   "dependencies": {
@@ -22,6 +23,7 @@
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -29,7 +31,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
