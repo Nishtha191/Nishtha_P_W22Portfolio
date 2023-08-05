@@ -3,15 +3,20 @@ spring:
     password:
     username: sa
     url: jdbc:h2:./app
-
   jpa:
     generate-ddl : true
     hibernate:
-      ddl-auto: validate
+      ddl-auto: create
     show-sql: true
 
   h2:
     console:
         enabled: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 server:
   port: 8081
+
+
+
